@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 30% 4%;
+    --foreground: 214 30% 91%;
+    --card: 220 24% 8%;
+    --card-foreground: 214 30% 91%;
+    --popover: 220 24% 8%;
+    --popover-foreground: 214 30% 91%;
+    --primary: 162 72% 63%;
+    --primary-foreground: 220 30% 4%;
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 214 30% 91%;
+    --muted: 220 20% 12%;
+    --muted-foreground: 214 15% 55%;
+    --accent: 209 35% 70%;
+    --accent-foreground: 220 30% 4%;
+    --destructive: 1 77% 68%;
+    --destructive-foreground: 214 30% 91%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 162 72% 63%;
+    --chart-1: 162 72% 63%;
+    --chart-2: 209 35% 70%;
+    --chart-3: 1 77% 68%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.25rem;
+    --font-heading: 'JetBrains Mono', ui-monospace, monospace;
+    --font-body: 'JetBrains Mono', ui-monospace, monospace;
+    --font-display: 'JetBrains Mono', ui-monospace, monospace;
+    --font-mono: 'Fira Code', 'JetBrains Mono', ui-monospace, monospace;
+    --sidebar-background: 220 24% 8%;
+    --sidebar-foreground: 214 30% 91%;
+    --sidebar-primary: 162 72% 63%;
+    --sidebar-primary-foreground: 220 30% 4%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 214 30% 91%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 162 72% 63%;
+  }
+
+  .dark {
+    --background: 220 30% 4%;
+    --foreground: 214 30% 91%;
+    --card: 220 24% 8%;
+    --card-foreground: 214 30% 91%;
+    --popover: 220 24% 8%;
+    --popover-foreground: 214 30% 91%;
+    --primary: 162 72% 63%;
+    --primary-foreground: 220 30% 4%;
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 214 30% 91%;
+    --muted: 220 20% 12%;
+    --muted-foreground: 214 15% 55%;
+    --accent: 209 35% 70%;
+    --accent-foreground: 220 30% 4%;
+    --destructive: 1 77% 68%;
+    --destructive-foreground: 214 30% 91%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 162 72% 63%;
+    --chart-1: 162 72% 63%;
+    --chart-2: 209 35% 70%;
+    --chart-3: 1 77% 68%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 220 24% 8%;
+    --sidebar-foreground: 214 30% 91%;
+    --sidebar-primary: 162 72% 63%;
+    --sidebar-primary-foreground: 220 30% 4%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 214 30% 91%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 162 72% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+
+  ::selection {
+    background: hsl(162 72% 63% / 0.25);
+    color: hsl(214 30% 91%);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(220 30% 4%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(220 15% 18%);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(220 15% 25%);
+  }
+}
