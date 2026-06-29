@@ -1,6 +1,6 @@
 # Hersh Patel
 
-Edison, NJ | P: 732-877-5181 | hershvpatel@gmail.com | GitHub | LinkedIn | Personal Website
+Edison, NJ | P: 732-877-5181 | hershvpatel@gmail.com 
 
 ## Education
 

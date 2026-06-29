@@ -1,8 +1,6 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
-
 import React from "react";
 import { motion } from "framer-motion";
-import { Activity, BarChart3, Server, Calendar } from "lucide-react";
+import { Activity, BarChart3, Server } from "lucide-react";
 
 const PROJECTS_IMG = "https://media.db.com/images/public/6a3dfc3e90867e1198f7190d/24f2c8880_generated_aee416e0.png";
 
