@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Play, MapPin, Mail, Phone, ExternalLink } from "lucide-react";
+import { Download, Play, MapPin, Mail, Phone, ExternalLink } from "lucide-react";
+import resumePdf from "@/HershPatelResume.pdf";
 
 const HERO_IMG = "https://media.db.com/images/public/6a3dfc3e90867e1198f7190d/13be5beb0_generated_8ce8fb51.png";
 
@@ -100,6 +101,14 @@ export default function HeroSection() {
               <Play className="w-4 h-4" />
               View Experience
             </button>
+            <a
+              href={resumePdf}
+              download="HershPatelResume.pdf"
+              className="flex items-center gap-2 border border-[#5DE4C7]/40 text-[#5DE4C7] font-mono font-semibold text-sm px-6 py-3 rounded-sm hover:bg-[#5DE4C7]/10 transition-colors">
+              
+              <Download className="w-4 h-4" />
+              Download Resume
+            </a>
             <a
               href="https://linkedin.com/in/hershvpatel"
               target="_blank"
